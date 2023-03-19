@@ -7,6 +7,8 @@ Our work proposes a scalable approach to identifying negative transfers that occ
 - First, we sample random subsets of source tasks and precompute their multitask learning performance. We fit the performances with linear regression and predict the performances on unseen task subsets. The fitted model provides a relevance score between each task and the primary target task.
 - Second, we perform subset selection on source tasks by choosing the tasks with a relevance score below a certain threshold, which is obtained by optimizing the surrogate model in terms of task subsets.
 
+
+
 ### **Requirements**
 
 We conduct our experiments in the following Python environment and with the following packages:
@@ -26,8 +28,6 @@ pip install -r requirements.txt
 ### **Usage**
 
 The code in this repo provides an example to conduct multitask learning using BERT models. The folder structure is as follows:
-
-The folder structure is as follows:
 
 ```
 Task-Modeling/
@@ -55,7 +55,7 @@ Task-Modeling/
 
 **Customization:**
 
-- Add new dataset:
+- **Add new dataset:**
   - Specify the `task_to_benchmark`, `task_to_collator`, and `task_to_load_fns` in `data_loaders/__init__.py`. Write specific collator and load functions in `collators.py` and `load_data_fns.py` if the new dataset does not fit into the default collator and loading logic.
   - Specify the `task_to_metric_name` in `metrics/__init__.py`. If the new metric is not defined in the `datasets` package, write a new metric file under the `./metrics` folder following the `huggingface-datasets` instructions.
   - Specify the `task_to_prediction_heads` in `models/__init__.py`.
@@ -156,7 +156,7 @@ For `train_sample_tasks.py`, use `—-target_task` to specify the main target ta
 If you find this repository useful or happen to use it in a research paper, please cite our work with the following bib information.
 
 ```latex
-@article{li2023idenfification,
+@article{li2023identification,
   title={Identification of Negative Transfers in Multitask Learning Using Surrogate Models},
   author={Li, Dongyue and Nguyen, Huy and Zhang, Hongyang Ryan},
   journal={Transactions on Machine Learning Research},
