@@ -7,7 +7,7 @@ Our work proposes a scalable approach to identifying negative transfers that occ
 - First, we sample random subsets of source tasks and precompute their multitask learning performance. We fit the performances with linear regression and predict the performances on unseen task subsets. The fitted model provides a relevance score between each task and the primary target task.
 - Second, we perform subset selection on source tasks by choosing the tasks with a relevance score below a certain threshold, which is obtained by optimizing the surrogate model in terms of task subsets.
 
-
+<div align=center><img src='./figures/pipeline.png' width="700"></div>
 
 ### **Requirements**
 
