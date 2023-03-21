@@ -158,7 +158,7 @@ If you find this repository useful or happen to use it in a research paper, plea
 ```latex
 @article{li2023identification,
   title={Identification of Negative Transfers in Multitask Learning Using Surrogate Models},
-  author={Li, Dongyue and Nguyen, Huy and Zhang, Hongyang Ryan},
+  author={Li, Dongyue and Nguyen, Huy and Zhang, Hongyang R},
   journal={Transactions on Machine Learning Research},
   year={2023}
 }
