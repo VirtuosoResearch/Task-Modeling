@@ -1,6 +1,6 @@
 ### **Overview**
 
-This repository contains the implementation for the paper "Identification of Negative Transfers in Multitask Learning Using Surrogate Models," published in the Transactions of Machine Learning Research (TMLR) in March 2023. The repository provides a general framework for building multitask learning systems with transformers. We hope that this can aid future work in building multitask learning systems.
+The repository provides a general framework for building multitask learning systems with transformers. We hope that this can aid future work in building multitask learning systems.
 
 Our work proposes a scalable approach to identifying negative transfers that occur in multitask learning through surrogate modeling. Our approach involves selecting subsets of auxiliary source tasks to optimize the performance of a primary target task. To achieve this, our approach consists of two main components:
 
