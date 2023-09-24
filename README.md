@@ -1,6 +1,6 @@
 ### **Overview**
 
-The repository provides a general framework for building multitask learning systems. Our work proposes a scalable approach to identifying negative transfers that occur in multitask learning through surrogate modeling. Our approach involves selecting subsets of auxiliary source tasks to optimize the performance of a primary target task. To achieve this, our approach consists of two main components:
+The repository provides a general framework for building multitask learning systems based on a published paper at TMLR'23. Our work proposes a scalable approach to identifying negative transfers that occur in multitask learning through surrogate modeling. Our approach involves selecting subsets of auxiliary source tasks to optimize the performance of a primary target task. To achieve this, our approach consists of two main components:
 
 - First, we sample random subsets of source tasks and precompute their multitask learning performance. We fit the performances with linear regression and predict the performances on unseen task subsets. The fitted model provides a relevance score between each task and the primary target task.
 - Second, we perform subset selection on source tasks by choosing the tasks with a relevance score below a certain threshold, which is obtained by optimizing the surrogate model in terms of task subsets.
